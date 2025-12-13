@@ -1,0 +1,23 @@
+{
+  "problems": [
+    {
+      "className": "TwoSum",
+      "problemName": "Two Sum",
+      "problemNumber": 1,
+      "difficulty": "Easy",
+      "solvedDate": "2024-01-01",
+      "tags": ["Array", "Hash Table"],
+      "notes": "Classic hash map approach"
+    },
+    {
+      "className": "SortByReflection",
+      "problemName": "Sort Array by Binary Reflection",
+      "problemNumber": null,
+      "difficulty": "Medium",
+      "solvedDate": "2025-12-14",
+      "tags": ["Array", "Sorting", "Bit Manipulation"],
+      "notes": "Custom sorting based on binary reflection"
+    }
+  ]
+}
+
