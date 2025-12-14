@@ -3,20 +3,32 @@
     {
       "className": "TwoSum",
       "problemName": "Two Sum",
-      "problemNumber": 1,
+      "problemNumber": "LC_1",
       "difficulty": "Easy",
       "solvedDate": "2024-01-01",
       "tags": ["Array", "Hash Table"],
-      "notes": "Classic hash map approach"
+      "notes": "Classic hash map approach",
+      "source": "LeetCode"
     },
     {
       "className": "SortByReflection",
       "problemName": "Sort Array by Binary Reflection",
-      "problemNumber": null,
+      "problemNumber": "LC_3769",
       "difficulty": "Medium",
       "solvedDate": "2025-12-14",
       "tags": ["Array", "Sorting", "Bit Manipulation"],
-      "notes": "Custom sorting based on binary reflection"
+      "notes": "Custom sorting based on binary reflection",
+      "source": "LeetCode"
+    },
+    {
+      "className": "LargestPrimeFromConsecutivePrimeSum",
+      "problemName": "Largest Prime from Consecutive Prime Sum",
+      "problemNumber": "LC_3770",
+      "difficulty": "Medium",
+      "solvedDate": "2025-12-14",
+      "tags": ["Array", "Prime Number", "Sieve of Eratosthenes"],
+      "notes": "Sieve of Eratosthenes",
+      "source": "LeetCode"
     }
   ]
 }

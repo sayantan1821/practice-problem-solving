@@ -29,8 +29,8 @@ public class GenerateProblemsMD {
         StringBuilder md = new StringBuilder();
         
         md.append("# LeetCode Problems Solved\n\n");
-        md.append("This file is **automatically generated** from `ProblemRegistry.java`.\n");
-        md.append("To update this file, edit `ProblemRegistry.java` and run:\n");
+        md.append("This file is **automatically generated** from `problems.json`.\n");
+        md.append("To update this file, edit `problems.json` and run:\n");
         md.append("```bash\n");
         md.append("./generate_problems_md.sh\n");
         md.append("```\n\n");
@@ -67,10 +67,17 @@ public class GenerateProblemsMD {
         md.append("\n");
         md.append("## How to Add a New Problem\n\n");
         md.append("1. Create your solution class in `src/main/java/com/practice/leetcode/`\n");
-        md.append("2. Register in `ProblemRegistry.java`:\n");
-        md.append("   ```java\n");
-        md.append("   registerProblem(\"YourClassName\", \"Problem Name\", \n");
-        md.append("       LocalDate.of(2024, 12, 19), \"Easy/Medium/Hard\");\n");
+        md.append("2. Add to `problems.json`:\n");
+        md.append("   ```json\n");
+        md.append("   {\n");
+        md.append("     \"className\": \"YourClassName\",\n");
+        md.append("     \"problemName\": \"Problem Name\",\n");
+        md.append("     \"problemNumber\": \"LC_123\",\n");
+        md.append("     \"difficulty\": \"Easy\",\n");
+        md.append("     \"solvedDate\": \"2024-12-19\",\n");
+        md.append("     \"tags\": [\"Array\"],\n");
+        md.append("     \"notes\": \"Your notes\"\n");
+        md.append("   }\n");
         md.append("   ```\n");
         md.append("3. Run `./generate_problems_md.sh` to update this file\n\n");
         

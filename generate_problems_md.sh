@@ -2,12 +2,13 @@
 # Generate PROBLEMS.md from ProblemRegistry.java
 
 echo "Compiling..."
-./compile.sh > /dev/null 2>&1
+./compile.sh
 
 if [ $? -ne 0 ]; then
-    echo "Compilation failed!"
+    echo "❌ Compilation failed!"
     exit 1
 fi
+echo ""
 
 echo "Generating PROBLEMS.md..."
 java -cp target/classes com.practice.leetcode.GenerateProblemsMD

@@ -7,8 +7,8 @@ echo "Compiling Java project..."
 # Create output directory
 mkdir -p target/classes
 
-# Find all Java files and compile
-JAVA_FILES=$(find src/main/java -name "*.java" -type f)
+# Find all Java files (exclude standalone files)
+JAVA_FILES=$(find src/main/java -name "*.java" -type f ! -name "*_Standalone.java")
 
 if [ -z "$JAVA_FILES" ]; then
     echo "No Java files found!"

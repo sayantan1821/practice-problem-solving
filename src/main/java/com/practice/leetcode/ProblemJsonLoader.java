@@ -32,17 +32,18 @@ public class ProblemJsonLoader {
     private static List<ProblemData> parseProblems(String json) {
         List<ProblemData> problems = new ArrayList<>();
         
-        // Pattern to match each problem object
+        // Pattern to match each problem object (handles optional fields and different problemNumber formats)
         Pattern problemPattern = Pattern.compile(
             "\\{\\s*" +
             "\"className\"\\s*:\\s*\"([^\"]+)\"\\s*," +
             "\\s*\"problemName\"\\s*:\\s*\"([^\"]+)\"\\s*," +
-            "\\s*\"problemNumber\"\\s*:\\s*(\\d+|null)\\s*," +
+            "\\s*\"problemNumber\"\\s*:\\s*\"?([^\",\\}]+)\"?\\s*," +
             "\\s*\"difficulty\"\\s*:\\s*\"([^\"]+)\"\\s*," +
             "\\s*\"solvedDate\"\\s*:\\s*\"([^\"]+)\"\\s*," +
             "\\s*\"tags\"\\s*:\\s*\\[([^\\]]+)\\]\\s*," +
-            "\\s*\"notes\"\\s*:\\s*\"([^\"]+)\"\\s*" +
-            "\\}", 
+            "\\s*\"notes\"\\s*:\\s*\"([^\"]+)\"" +
+            "(?:,\\s*\"source\"\\s*:\\s*\"[^\"]+\")?" +
+            "\\s*\\}", 
             Pattern.DOTALL
         );
         
@@ -63,10 +64,24 @@ public class ProblemJsonLoader {
             // Parse tags
             List<String> tagList = parseTags(tags);
             
+            // Parse problem number (could be number, string like "LC_1", or null)
+            Integer problemNum = null;
+            if (problemNumber != null && !problemNumber.trim().isEmpty() && !"null".equals(problemNumber)) {
+                try {
+                    // Try to extract number from strings like "LC_1" -> 1
+                    String numStr = problemNumber.replaceAll("[^0-9]", "");
+                    if (!numStr.isEmpty()) {
+                        problemNum = Integer.parseInt(numStr);
+                    }
+                } catch (NumberFormatException e) {
+                    // Keep as null if can't parse
+                }
+            }
+            
             problems.add(new ProblemData(
                 className,
                 problemName,
-                "null".equals(problemNumber) ? null : Integer.parseInt(problemNumber),
+                problemNum,
                 difficulty,
                 date,
                 tagList,
