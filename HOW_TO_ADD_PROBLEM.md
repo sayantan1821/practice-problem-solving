@@ -105,3 +105,7 @@ Done! The problem is now tracked in PROBLEMS.md.
 - Use `null` for problemNumber if not applicable
 - Problems are automatically loaded from JSON when the program runs
 
+## Roadmap / TODO
+
+- Create dedicated packages for standalone LeetCode editor files (e.g. `*_Standalone.java`) so that multiple `class Solution` definitions can coexist without duplicate-class compile errors.
+
