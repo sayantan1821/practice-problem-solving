@@ -39,6 +39,16 @@
       "tags": ["Array", "Sorting"],
       "notes": "TODO: Implement absoluteDifference(nums, k) solution",
       "source": "LeetCode"
+    },
+    {
+      "className": "FindMaximumBalancedXorSubarrayLength",
+      "problemName": "Find Maximum Balanced XOR Subarray Length",
+      "problemNumber": "LC_3755",
+      "difficulty": "Medium",
+      "solvedDate": "2025-12-15",
+      "tags": ["Array", "Prefix XOR", "Parity"],
+      "notes": "Prefix operation with xor",
+      "source": "LeetCode"
     }
   ]
 }

@@ -11,9 +11,10 @@ To update this file, edit `problems.json` and run:
 | # | Problem Name | Difficulty | Solved Date | Class Name |
 |---|--------------|------------|-------------|------------|
 | 1 | Absolute Difference Between Maximum and Minimum K Elements | Easy | 2025-12-15 | `AbsoluteDifferenceMaxMinKElements` |
-| 2 | Sort Array by Binary Reflection | Medium | 2025-12-14 | `SortByReflection` |
-| 3 | Largest Prime from Consecutive Prime Sum | Medium | 2025-12-14 | `LargestPrimeFromConsecutivePrimeSum` |
-| 4 | Two Sum | Easy | 2024-01-01 | `TwoSum` |
+| 2 | Find Maximum Balanced XOR Subarray Length | Medium | 2025-12-15 | `FindMaximumBalancedXorSubarrayLength` |
+| 3 | Sort Array by Binary Reflection | Medium | 2025-12-14 | `SortByReflection` |
+| 4 | Largest Prime from Consecutive Prime Sum | Medium | 2025-12-14 | `LargestPrimeFromConsecutivePrimeSum` |
+| 5 | Two Sum | Easy | 2024-01-01 | `TwoSum` |
 
 ## How to Add a New Problem
 
@@ -34,8 +35,8 @@ To update this file, edit `problems.json` and run:
 
 ## Statistics
 
-- **Total Problems**: 4
+- **Total Problems**: 5
 - **Easy**: 2
-- **Medium**: 2
+- **Medium**: 3
 - **Hard**: 0
 
