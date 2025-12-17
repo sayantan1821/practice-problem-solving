@@ -49,6 +49,16 @@
       "tags": ["Array", "Prefix XOR", "Parity"],
       "notes": "Prefix operation with xor",
       "source": "LeetCode"
+    },
+    {
+      "className": "SetMatrixZeroes",
+      "problemName": "Set Matrix Zeroes",
+      "problemNumber": "LC_73",
+      "difficulty": "Medium",
+      "solvedDate": "2025-12-15",
+      "tags": ["Array", "Matrix"],
+      "notes": "TODO: Implement setZeroes(matrix) in-place solution",
+      "source": "LeetCode"
     }
   ]
 }
