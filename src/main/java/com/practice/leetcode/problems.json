@@ -59,6 +59,36 @@
       "tags": ["Array", "Matrix"],
       "notes": "TODO: Implement setZeroes(matrix) in-place solution",
       "source": "LeetCode"
+    },
+    {
+      "className": "MinimumNumberOfOperationsToHaveDistinctElements",
+      "problemName": "Minimum Number of Operations to Have Distinct Elements",
+      "problemNumber": "LC_3779",
+      "difficulty": "Medium",
+      "solvedDate": "2025-12-21",
+      "tags": ["Array"],
+      "notes": "TODO: Implement minOperations solution",
+      "source": "LeetCode"
+    },
+    {
+      "className": "MaximumSumOfThreeNumbersDivisibleByThree",
+      "problemName": "Maximum Sum of Three Numbers Divisible by Three",
+      "problemNumber": "LC_3780",
+      "difficulty": "Medium",
+      "solvedDate": "2025-12-21",
+      "tags": ["Array", "Math", "Modular Arithmetic"],
+      "notes": "TODO: Implement maximumSum solution",
+      "source": "LeetCode"
+    },
+    {
+      "className": "MaximumScoreOfASplit",
+      "problemName": "Maximum Score of a Split",
+      "problemNumber": "LC_3788",
+      "difficulty": "Medium",
+      "solvedDate": "2026-01-03",
+      "tags": ["Array", "Prefix Sum"],
+      "notes": "TODO: Implement maxScore solution",
+      "source": "LeetCode"
     }
   ]
 }

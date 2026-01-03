@@ -1,0 +1,33 @@
+Register a new LeetCode problem in this repository. Parse the raw LeetCode problem text below and automatically:
+
+1. Extract problem number, name, difficulty, and description
+2. Extract test cases from examples
+3. Infer the method signature (from LeetCode format or problem description)
+4. Create the solution class at `src/main/java/com/practice/leetcode/[ClassName].java` with:
+   - Package declaration: `package com.practice.leetcode;`
+   - JavaDoc with problem name, number, difficulty, and LeetCode link (construct from problem name)
+   - Problem description in comments
+   - Method signature with TODO placeholder (return null for return types, empty body for void)
+5. Create the test class at `src/test/java/com/practice/leetcode/[ClassName]Test.java` with:
+   - JUnit 5 imports
+   - Test methods for each example from the problem
+   - Appropriate assertion helpers (e.g., assertMatrixEquals for 2D arrays)
+6. Add entry to `src/main/java/com/practice/leetcode/problems.json`:
+   - className: PascalCase version of problem name (no spaces, e.g., "SetMatrixZeroes")
+   - problemName: Full problem name
+   - problemNumber: Format as "LC_[number]" (extract number from text)
+   - difficulty: Extract from text (Easy/Medium/Hard)
+   - solvedDate: Today's date in YYYY-MM-DD format
+   - tags: Infer from problem description (common tags: Array, String, Hash Table, Two Pointers, Dynamic Programming, etc.)
+   - notes: "TODO: Implement [methodName] solution"
+   - source: "LeetCode"
+
+**DO NOT implement the solution** - only create the structure with TODO placeholders.
+
+Reference existing files like `SetMatrixZeroes.java` and `SetMatrixZeroesTest.java` for format and structure.
+
+---
+
+**Paste the LeetCode problem below:**
+
+[Paste raw LeetCode problem text here - can include problem number, name, difficulty, description, examples, etc.]
